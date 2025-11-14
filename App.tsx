@@ -9,6 +9,8 @@ import { ProviderDashboard } from "./components/ProviderDashboard";
 import { ClientDashboard } from "./components/ClientDashboard";
 import { PublicCatalog } from "./components/PublicCatalog";
 
+/* PULL REQUEST 2 CAMBIO HEADER*/
+
 export type UserRole = "admin" | "provider" | "client" | null;
 
 export interface Service {
