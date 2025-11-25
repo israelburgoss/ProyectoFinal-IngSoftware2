@@ -40,7 +40,7 @@ interface ProviderDashboardProps {
 
 export function ProviderDashboard({ user, onLogout }: ProviderDashboardProps) {
   const menuItems: MenuItem[] = [
-    { id: 'dashboard', label: 'Dashboard', icon: <LayoutDashboard className="w-5 h-5" /> },
+    { id: 'dashboard', label: 'Dashboard', icon: <LayoutDashboard className="w-6 h-5" /> },
     { id: 'mis-servicios', label: 'Mis Servicios', icon: <Package className="w-5 h-5" /> },
     { id: 'mis-clientes', label: 'Mis Clientes', icon: <Users className="w-5 h-5" /> },
     { id: 'mi-perfil', label: 'Mi Perfil', icon: <UserCircle className="w-5 h-5" /> },
