@@ -1,12 +1,30 @@
 import { useState } from 'react';
 import { LogOut, User as UserIcon } from 'lucide-react';
 import { Button } from './ui/button';
-import { Service, User } from '../App';
 import { HomePage } from './HomePage';
 import { ServicesPage } from './ServicesPage';
 import { ProvidersPage } from './ProvidersPage';
 import { ContactPage } from './ContactPage';
 
+// Define User interface locally if not exported from App
+interface User {
+  id: string;
+  name: string;
+  email: string;
+  role: string;
+}
+
+// Define Service interface locally if not exported from App
+export interface Service {
+  id: string;
+  name: string;
+  description: string;
+  price: number;
+  category: string;
+  provider: string;
+  rating: number;
+  image?: string;
+}
 interface PublicCatalogProps {
   onServiceSelect: (service: Service) => void;
   user: User | null;
