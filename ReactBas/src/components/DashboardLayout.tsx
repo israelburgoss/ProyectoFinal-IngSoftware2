@@ -1,9 +1,14 @@
-import { ReactNode, useState } from 'react';
-import { motion, AnimatePresence } from 'motion/react';
+import { useState } from 'react';
+import type { ReactNode } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 import { LogOut, Menu, X } from 'lucide-react';
 import { Button } from './ui/button';
-import { User } from '../App';
 import { cn } from './ui/utils';
+
+export interface User {
+  name: string;
+  email: string;
+}
 
 export interface MenuItem {
   id: string;

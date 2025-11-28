@@ -2,7 +2,19 @@ import { Search, Star, TrendingUp, Shield, Clock } from 'lucide-react';
 import { Button } from './ui/button';
 import { Input } from './ui/input';
 import { Card, CardContent } from './ui/card';
-import { Service } from '../App';
+
+interface Service {
+  id: string;
+  name: string;
+  provider: string;
+  date?: string;
+  time?: string;
+  price: number;
+  location?: string;
+  description?: string;
+  image?: string;
+}
+
 import { ImageWithFallback } from './figma/ImageWithFallback';
 
 interface HomePageProps {

@@ -1,13 +1,13 @@
 import { useState, useEffect } from "react";
-import { LoginScreen } from "./components/LoginScreen";
-import { ConfirmService } from "./components/ConfirmService";
-import { PaymentMethod } from "./components/PaymentMethod";
-import { BookingConfirmation } from "./components/BookingConfirmation";
-import { RedirectScreen } from "./components/RedirectScreen";
-import { AdminDashboard } from "./components/AdminDashboard";
-import { ProviderDashboard } from "./components/ProviderDashboard";
-import { ClientDashboard } from "./components/ClientDashboard";
-import { PublicCatalog } from "./components/PublicCatalog";
+import { LoginScreen } from "./src/components/LoginScreen";
+import { ConfirmService } from "./src/components/ConfirmService";
+import { PaymentMethod } from "./src/components/PaymentMethod";
+import { BookingConfirmation } from "./src/components/BookingConfirmation";
+import { RedirectScreen } from "./src/components/RedirectScreen";
+import { AdminDashboard } from "./src/components/AdminDashboard";
+import { ProviderDashboard } from "./src/components/ProviderDashboard";
+import { ClientDashboard } from "./src/components/ClientDashboard";
+import { PublicCatalog } from "./src/components/PublicCatalog";
 
 export type UserRole = "admin" | "provider" | "client" | null;
 

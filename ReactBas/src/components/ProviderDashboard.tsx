@@ -1,3 +1,19 @@
+import { DashboardLayout } from './DashboardLayout';
+import type { MenuItem } from './DashboardLayout';
+import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
+import { Button } from './ui/button';
+import { Badge } from './ui/badge';
+import { Input } from './ui/input';
+import { Textarea } from './ui/textarea';
+
+interface User {
+  id?: string;
+  name: string;
+  email: string;
+  avatarUrl?: string;
+  role?: string;
+}
+
 import { 
   LayoutDashboard,
   Package,
@@ -17,12 +33,7 @@ import {
   Edit,
   Trash2
 } from 'lucide-react';
-import { DashboardLayout, MenuItem } from './DashboardLayout';
-import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
-import { Button } from './ui/button';
-import { Badge } from './ui/badge';
-import { Input } from './ui/input';
-import { Textarea } from './ui/textarea';
+
 import { 
   Table,
   TableBody,
@@ -31,8 +42,6 @@ import {
   TableHeader,
   TableRow,
 } from './ui/table';
-import { User } from '../App';
-
 interface ProviderDashboardProps {
   user: User;
   onLogout: () => void;

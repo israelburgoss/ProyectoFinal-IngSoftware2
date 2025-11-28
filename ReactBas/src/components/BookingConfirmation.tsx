@@ -1,7 +1,10 @@
 import { CheckCircle, Mail, Bell, Calendar, User as UserIcon, LogOut } from 'lucide-react';
 import { Button } from './ui/button';
 import { Card, CardContent } from './ui/card';
-import { User } from '../App';
+
+interface User {
+  name: string;
+}
 
 interface BookingConfirmationProps {
   onViewBookings: () => void;

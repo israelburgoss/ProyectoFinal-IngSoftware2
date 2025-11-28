@@ -4,8 +4,19 @@ import { Button } from './ui/button';
 import { Input } from './ui/input';
 import { Card, CardContent } from './ui/card';
 import { Badge } from './ui/badge';
-import { Service } from '../App';
 import { ImageWithFallback } from './figma/ImageWithFallback';
+
+export interface Service {
+  id: string;
+  name: string;
+  provider: string;
+  date: string;
+  time: string;
+  price: number;
+  location: string;
+  description: string;
+  image: string;
+}
 
 interface ServicesPageProps {
   onServiceSelect: (service: Service) => void;
