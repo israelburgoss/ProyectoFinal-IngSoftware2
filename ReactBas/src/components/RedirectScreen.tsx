@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Shield, Briefcase, User, Loader2 } from 'lucide-react';
-import { UserRole } from '../App';
+
+export type UserRole = 'admin' | 'provider' | 'user';
 
 interface RedirectScreenProps {
   userName: string;

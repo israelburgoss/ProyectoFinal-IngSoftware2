@@ -3,9 +3,15 @@ import { Button } from './ui/button';
 import { Card, CardContent } from './ui/card';
 import { Badge } from './ui/badge';
 import { Separator } from './ui/separator';
-import { Service, User } from '../App';
+import { Service } from './components/ServicesPage';
 import { ImageWithFallback } from './figma/ImageWithFallback';
 
+interface User {
+  name: string;
+  email: string;
+  avatar?: string;
+  role?: string;
+}
 interface ConfirmServiceProps {
   service: Service;
   onConfirm: () => void;

@@ -1,3 +1,18 @@
+import { DashboardLayout } from './DashboardLayout';
+import type { MenuItem } from './DashboardLayout';
+import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
+import { Button } from './ui/button';
+import { Badge } from './ui/badge';
+import { Input } from './ui/input';
+import { ImageWithFallback } from './figma/ImageWithFallback';
+
+interface User {
+  name: string;
+  email: string;
+  avatar?: string;
+  role?: string;
+}
+
 import { 
   LayoutDashboard,
   Search,
@@ -12,16 +27,9 @@ import {
   Star,
   Heart,
   CreditCard,
-  Package
+  Package,
+  Plus
 } from 'lucide-react';
-import { DashboardLayout, MenuItem } from './DashboardLayout';
-import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
-import { Button } from './ui/button';
-import { Badge } from './ui/badge';
-import { Input } from './ui/input';
-import { ImageWithFallback } from './figma/ImageWithFallback';
-import { User } from '../App';
-
 interface ClientDashboardProps {
   user: User;
   onLogout: () => void;

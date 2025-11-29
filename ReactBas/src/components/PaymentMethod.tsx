@@ -6,7 +6,22 @@ import { Input } from './ui/input';
 import { Label } from './ui/label';
 import { RadioGroup, RadioGroupItem } from './ui/radio-group';
 import { Separator } from './ui/separator';
-import { Service, User } from '../App';
+interface Service {
+  service: Service;
+  id: string;
+  name: string;
+  provider: string;
+  date?: string;
+  time?: string;
+  price: number;
+  location?: string;
+  description?: string;
+  image?: string;
+}
+
+type User = {
+  name: string;
+};
 
 interface PaymentMethodProps {
   service: Service;
@@ -280,7 +295,7 @@ export function PaymentMethod({ service, onConfirm, onBack, user, onLogout }: Pa
                       <p className="text-sm text-gray-900">{service.name}</p>
                       <p className="text-xs text-gray-600">{service.provider}</p>
                       <p className="text-xs text-gray-600 mt-1">
-                        {new Date(service.date).toLocaleDateString('es-ES', {
+                        {service.date && new Date(service.date).toLocaleDateString('es-ES', {
                           day: '2-digit',
                           month: '2-digit'
                         })} • {service.time}
