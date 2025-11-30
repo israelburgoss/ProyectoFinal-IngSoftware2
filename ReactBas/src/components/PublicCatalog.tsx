@@ -18,11 +18,11 @@ interface User {
 export interface Service {
   id: string;
   name: string;
-  description: string;
+  description?: string;
   price: number;
-  category: string;
+  category?: string;
   provider: string;
-  rating: number;
+  rating?: number;
   image?: string;
 }
 interface PublicCatalogProps {

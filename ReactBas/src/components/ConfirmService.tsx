@@ -3,7 +3,7 @@ import { Button } from './ui/button';
 import { Card, CardContent } from './ui/card';
 import { Badge } from './ui/badge';
 import { Separator } from './ui/separator';
-import { Service } from './components/ServicesPage';
+import type { Service } from './ServicesPage';
 import { ImageWithFallback } from './figma/ImageWithFallback';
 
 interface User {
